@@ -1,7 +1,6 @@
 import reactLogo from './assets/react.svg'
 
-function Box() 
-{
+function Box() {
     return(
         <>
             <div>
