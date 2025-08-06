@@ -3,7 +3,7 @@ const About = () => {
   const info = [
     // { text: "Years experience", count: "04" },
     { text: "Completed Projects", count: "2" },
-    { text: "Companies Work", count: "01" }
+    { text: "Companies Work", count: "1" }
   ];
 
  
