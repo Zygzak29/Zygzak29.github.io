@@ -37,7 +37,18 @@ const Navbar = () => {
           <ul className="flex items-center gap-1 py-2 text-lg">
             {menuLinks?.map((menu, i) => (
               <li key={i} className="px-6 hover:text-cyan-600">
-                <a href={menu?.link}>{menu?.name}</a>
+                <a
+                  href={menu?.link}
+                  onClick={e => {
+                    e.preventDefault();
+                    const section = document.querySelector(menu.link);
+                    if (section) {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {menu?.name}
+                </a>
               </li>
             ))}
           </ul>
@@ -63,7 +74,18 @@ const Navbar = () => {
                 key={i}
                 className="px-6 hover:text-cyan-600"
               >
-                <a href={menu?.link}>{menu?.name}</a>
+                <a
+                  href={menu?.link}
+                  onClick={e => {
+                    e.preventDefault();
+                    const section = document.querySelector(menu.link);
+                    if (section) {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {menu?.name}
+                </a>
               </li>
             ))}
           </ul>
